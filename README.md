@@ -1,4 +1,4 @@
-# Teleportacion-Cuantica
+# Teleportación Cuántica
 Se ilustra el protocolo de transportación cuántica en un cuaderno de jupyter usando el SDK Qiskit
 
 ## Uso
