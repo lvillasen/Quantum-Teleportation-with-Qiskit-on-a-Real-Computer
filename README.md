@@ -1,8 +1,13 @@
 # Teleportación Cuántica
-Se ilustra el protocolo de transportación cuántica en un cuaderno de jupyter usando el SDK Qiskit
+Se ilustra el protocolo de teleportación cuántica en un cuaderno de jupyter usando el SDK Qiskit
 
-### También se puede ver en el video https://www.facebook.com/CiiecBuap/videos/698380658240902
+### También se puede ver en el video 
 
+https://www.facebook.com/CiiecBuap/videos/698380658240902
+
+### Material adicional con una introducción a la Computación Cuántica se puede consultar en 
+
+https://github.com/lvillasen/Introduccion-a-la-Computacion-Cuantica
 
 ## Uso
 
