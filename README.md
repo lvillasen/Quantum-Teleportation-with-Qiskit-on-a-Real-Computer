@@ -5,7 +5,7 @@ We illustrate how to perform the quantum teleportation of one qubit using Qiskit
 # Quantum teleportation protocol:
 
 Assuming Alice wants to share the qubit
-$ |\psi\rangle=\alpha|0\rangle + \beta|1\rangle $ with Bob, they can do the following protocol:
+$|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$ with Bob, they can do the following protocol:
 
 - Alice y Bob ask Carol to create 2 entangled qubits 
 
