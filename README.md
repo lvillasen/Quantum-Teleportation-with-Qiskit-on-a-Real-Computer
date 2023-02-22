@@ -73,7 +73,7 @@ $$
 that we can rewrite as
 
 $$
-\frac{1}{2}( (\alpha|0\rangle + \beta|1\rangle)\otimes|00\rangle +(\alpha|1\rangle - \beta|0\rangle)\otimes|01\rangle +(\alpha|1\rangle+ \beta|0\rangle)\otimes|10\rangle+ (\alpha|1\rangle - \beta|0\rangle)\otimes|11\rangle  )
+\frac{1}{2}\big( (\alpha|0\rangle + \beta|1\rangle)\otimes|00\rangle +(\alpha|1\rangle - \beta|0\rangle)\otimes|01\rangle +(\alpha|1\rangle+ \beta|0\rangle)\otimes|10\rangle+ (\alpha|1\rangle - \beta|0\rangle)\otimes|11\rangle  \big)
 $$
 
 - Next Alice measures her two qubits and sends the result $C_1C_0$ to Bob through a classical channel,
