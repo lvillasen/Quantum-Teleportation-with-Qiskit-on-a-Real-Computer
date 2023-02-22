@@ -106,8 +106,11 @@ $$ Z \ket{1}= -\ket{1} $$
 - Next Bob does the following with his qubit:
 
 If $𝐶_1𝐶_0=00$ Bob does nothing
+
 If $𝐶_1𝐶_0=01$ Bob applies a Z gate to his qubit 
+
 If $𝐶_1𝐶_0=10$ Bob applies a X gate to his qubit 
+
 If $𝐶_1𝐶_0=11$ Bob applies a X gate followed by a Z gate to his qubit 
 
 ```
