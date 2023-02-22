@@ -73,11 +73,9 @@ $$
 that we can rewrite as
 
 $$
-\begin{align*}
 = \frac{1}{2}( (\alpha|0\rangle + \beta|1\rangle)\otimes|00\rangle  
 + (\alpha|1\rangle - \beta|0\rangle)\otimes|01\rangle   + (\alpha|1\rangle + \beta|0\rangle)\otimes|10\rangle  
  + (\alpha|1\rangle - \beta|0\rangle)\otimes|11\rangle  )
-\end{align*}
 $$
 
 - Next Alice measures her two qubits and sends the result $C_1C_0$ to Bob through a classical channel
@@ -108,9 +106,9 @@ $$ Z \ket{1}= -\ket{1} $$
 - Next Bob does the following with his qubit:
 
 
-<div align="center">If $C_1C_0 = 00$ Bob does nothing </div>
+If $$C_1C_0 = 00$ Bob does nothing 
 
-<div align="center">If $C_1C_0 = 01$ Bob applies a Z gate</div> 
+If $$C_1C_0 = 01$$ Bob applies a Z gate</div> 
 
 <div align="center">If $C_1C_0 = 10$ Bob applies an X gate</div>
 
@@ -118,7 +116,7 @@ $$ Z \ket{1}= -\ket{1} $$
 
 - At this point Bob´s qubit will be
 
-<div align="center"> $|q_2\rangle= \alpha|0\rangle + \beta|1\rangle$ </div>
+$$|q_2\rangle= \alpha|0\rangle + \beta|1\rangle$$
 
 
 ## Usage
