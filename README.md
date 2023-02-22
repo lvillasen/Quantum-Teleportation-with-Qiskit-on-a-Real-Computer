@@ -1,8 +1,8 @@
-# Quantum Teleportation with Qiskit on a Simulated and a Real Quantum Computer
+# Quantum Teleportation with Qiskit 
 We illustrate how to perform the quantum teleportation of one qubit using Qiskit. We do it on an ideal simulated quantum computer, a simulated quantum computer with noise and a real quantum computer from the IBM Quantum Experience.
 
 
-# Quantum teleportation protocol:
+## Quantum teleportation protocol:
 
 Assuming Alice wants to share the qubit
 $|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$ with Bob, they can do the following protocol:
