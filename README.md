@@ -11,7 +11,7 @@ $|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$ with Bob, they can do the follow
 
 - Carol sends one of the entangled qubits to Alice and the other to Bob
 
-- Let's call $q_0$ to $ |\psi\rangle$, $q_1$ to the entangled qubit passeded by Alice and $q_2$ to the entangled qubit passeded by Bob
+- Let's call $q_0$ to $|\psi\rangle$, $q_1$ to the entangled qubit passesed by Alice and $q_2$ to the entangled qubit passesed by Bob
 
 - Alice applys a CNOT gate to her two qubits $q_1q_0$
 
