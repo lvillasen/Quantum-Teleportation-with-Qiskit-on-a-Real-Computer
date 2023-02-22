@@ -73,14 +73,12 @@ $$
 that we can rewrite as
 
 $$
-= \frac{1}{2}( (\alpha|0\rangle + \beta|1\rangle)\otimes|00\rangle  
+\frac{1}{2}( (\alpha|0\rangle + \beta|1\rangle)\otimes|00\rangle  
 + (\alpha|1\rangle - \beta|0\rangle)\otimes|01\rangle   + (\alpha|1\rangle + \beta|0\rangle)\otimes|10\rangle  
  + (\alpha|1\rangle - \beta|0\rangle)\otimes|11\rangle  )
 $$
 
-- Next Alice measures her two qubits and sends the result $C_1C_0$ to Bob through a classical channel
-Enseguida Alice mide sus 2 qubits y le manda el resultado de los 2 bits a través de un canal clásico 
- 
+- Next Alice measures her two qubits and sends the result $C_1C_0$ to Bob through a classical channel,
 in consequence Bob´s qubit will transform into one of the four states:
 
 $$|00\rangle \rightarrow (\alpha|0\rangle + \beta|1\rangle)$$
@@ -105,14 +103,13 @@ $$ Z \ket{1}= -\ket{1} $$
 
 - Next Bob does the following with his qubit:
 
-
-If $$C_1C_0 = 00$ Bob does nothing 
-
-If $$C_1C_0 = 01$$ Bob applies a Z gate</div> 
-
-<div align="center">If $C_1C_0 = 10$ Bob applies an X gate</div>
-
-<div align="center">If $C_1C_0 = 11$ Bob applies the gates ZX</div>
+If $𝐶_1𝐶_0=00$
+```
+If 𝐶1𝐶0=00 does nothing
+If 𝐶1𝐶0=01 applies a Z gate to his qubit 
+If 𝐶1𝐶0=10 applies a X gate to his qubit 
+If 𝐶1𝐶0=11 applies a X gate followed by a Z gate to his qubit 
+```
 
 - At this point Bob´s qubit will be
 
