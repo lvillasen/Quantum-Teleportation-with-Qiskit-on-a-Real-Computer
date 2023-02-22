@@ -13,9 +13,9 @@ $|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$ with Bob, they can do the follow
 
 - Let's call $q_0$ to $|\psi\rangle$, $q_1$ to the entangled qubit passesed by Alice and $q_2$ to the entangled qubit passesed by Bob
 
-- Alice applys a CNOT gate to her two qubits $q_1q_0$
+- Alice applies a CNOT gate to her two qubits $q_1q_0$
 
-- Alice applys a Haddamard gate to gate to her qubit $q_0$
+- Alice applies a Haddamard gate to gate to her qubit $q_0$
 
 - Alice measures  her two qubis and sends the results to Bob using a classical channel
 
@@ -23,13 +23,100 @@ $|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$ with Bob, they can do the follow
 - Bob receives the two bits $𝐶_1𝐶_0$ and depending on their values takes the following actions
 ```
 If 𝐶1𝐶0=00 does nothing
-If 𝐶1𝐶0=01 applys a Z gate to his qubit 
-If 𝐶1𝐶0=10 applys a X gate to his qubit 
-If 𝐶1𝐶0=11 applys a X gate followed by a Z gate to his qubit 
+If 𝐶1𝐶0=01 applies a Z gate to his qubit 
+If 𝐶1𝐶0=10 applies a X gate to his qubit 
+If 𝐶1𝐶0=11 applies a X gate followed by a Z gate to his qubit 
 ```
 
 - At this point Bob´s qubit $q_2$ is identical to $|\psi\rangle$. 
 
+##  Mathematics of Quantum Teleportation
+
+
+- Alice wants to share her qubit 
+
+$$ \alpha|0\rangle + \beta|1\rangle $$
+
+- The entangled qubits are 
+
+$$  \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) $$
+
+- Alice gets the rightmost qubit and Bob the leftmost qubit  so that the quantum state of the three qubits is
+
+$$ \begin{align*}
+\frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)\otimes ( \alpha|0\rangle+ \beta |1\rangle \\
+&= \frac{1}{\sqrt{2}} (\alpha|000\rangle + \alpha|110\rangle + \beta|001\rangle + \beta|111\rangle) 
+\end{align*}$$
+
+- Let´s recall that 
+
+$$ CNOT \ket{00}= \ket{00}$$
+$$ CNOT \ket{01}= \ket{11}$$
+$$ CNOT \ket{10}= \ket{10}$$
+$$ CNOT \ket{11}= \ket{01}$$
+
+
+- Following the protocol, Alice applyes a CNOT gate to het 2 qubits  $𝑞_1𝑞_0$ and a Hadamard gate to qubit  $𝑞_0$. 
+
+resulting in the state
+
+$$ 
+\begin{align*} (I \otimes I \otimes H) (I \otimes CNOT) \frac{1}{\sqrt{2}} (\alpha|000\rangle + \alpha|110\rangle + \beta|001\rangle + \beta|111\rangle) \\
+&= (I \otimes I \otimes H) \frac{1}{\sqrt{2}} (\alpha|000\rangle + \alpha|110\rangle + \beta|011\rangle + \beta|101\rangle) \\
+&= \frac{1}{2}  (\alpha(|000\rangle + |001\rangle + |110\rangle + |111\rangle) + \beta(|010\rangle - |011\rangle + |100\rangle - |101\rangle)) \\
+\end{align*}
+$$
+
+that we can rewrite as
+
+$$
+\begin{align*}
+= \frac{1}{2}( (\alpha|0\rangle + \beta|1\rangle)\otimes|00\rangle  
++ (\alpha|1\rangle - \beta|0\rangle)\otimes|01\rangle   + (\alpha|1\rangle + \beta|0\rangle)\otimes|10\rangle  
+ + (\alpha|1\rangle - \beta|0\rangle)\otimes|11\rangle  )
+\end{align*}
+$$
+
+- Next Alice measures her two qubits and sends the result $C_1C_0$ to Bob through a classical channel
+Enseguida Alice mide sus 2 qubits y le manda el resultado de los 2 bits a través de un canal clásico 
+ 
+in consequence Bob´s se proyectará en uno de los 4 estados siguientes:
+El qubit de Bob qubit will  turn into one of the four states:
+
+$$ |00\rangle \rightarrow (\alpha|0\rangle + \beta|1\rangle)$$
+
+$$|01\rangle \rightarrow (\alpha|1\rangle - \beta|0\rangle)$$
+
+$$|10\rangle \rightarrow (\alpha|1\rangle + \beta|0\rangle)$$
+
+$$|11\rangle \rightarrow (\alpha|1\rangle - \beta|0\rangle)$$
+
+- Let´s recall that
+
+$$ X \ket{0} = \ket{1}$$
+$$ X \ket{1} = \ket{0}$$
+
+and
+
+
+$$ Z \ket{0}= \ket{0} $$
+$$ Z \ket{1}= -\ket{1} $$
+
+
+- Next Bob does the following with his qubit:
+
+
+<div align="center">If $C_1C_0 = 00$ Bob does nothing </div>
+
+<div align="center">If $C_1C_0 = 01$ Bob applies a Z gate</div> 
+
+<div align="center">If $C_1C_0 = 10$ Bob applies an X gate</div>
+
+<div align="center">If $C_1C_0 = 11$ Bob applies the gates ZX</div>
+
+- At this point Bob´s qubit will be
+
+<div align="center"> $|q_2\rangle= \alpha|0\rangle + \beta|1\rangle$ </div>
 
 
 ## Usage
