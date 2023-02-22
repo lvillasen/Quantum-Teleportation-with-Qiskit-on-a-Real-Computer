@@ -105,19 +105,11 @@ $$ Z \ket{1}= -\ket{1} $$
 
 - Next Bob does the following with his qubit:
 
-If $𝐶_1𝐶_0=00$ Bob does nothing
-
-If $𝐶_1𝐶_0=01$ Bob applies a Z gate to his qubit 
-
-If $𝐶_1𝐶_0=10$ Bob applies a X gate to his qubit 
-
-If $𝐶_1𝐶_0=11$ Bob applies a X gate followed by a Z gate to his qubit 
-
 ```
-If 𝐶1𝐶0=00 does nothing
-If 𝐶1𝐶0=01 applies a Z gate to his qubit 
-If 𝐶1𝐶0=10 applies a X gate to his qubit 
-If 𝐶1𝐶0=11 applies a X gate followed by a Z gate to his qubit 
+If 𝐶1𝐶0=00 Bob does nothing
+If 𝐶1𝐶0=01 Bob applies a Z gate to his qubit 
+If 𝐶1𝐶0=10 Bob applies a X gate to his qubit 
+If 𝐶1𝐶0=11 Bob applies a X gate followed by a Z gate to his qubit 
 ```
 
 - At this point Bob´s qubit will be
