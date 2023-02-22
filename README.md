@@ -11,13 +11,13 @@ $|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$ with Bob, they can do the follow
 
 - Carol sends one of the entangled qubits to Alice and the other to Bob
 
-- Let's call $q_0$ to $|\psi\rangle$, $q_1$ to the entangled qubit passesed by Alice and $q_2$ to the entangled qubit passesed by Bob
+- Let's call $q_0$ to $|\psi\rangle$, $q_1$ to the entangled qubit possesed by Alice and $q_2$ to the entangled qubit possesed by Bob
 
 - Alice applies a CNOT gate to her two qubits $q_1q_0$
 
-- Alice applies a Haddamard gate to gate to her qubit $q_0$
+- Alice applies a Hadamard gate to gate to her qubit $q_0$
 
-- Alice measures  her two qubis and sends the results to Bob using a classical channel
+- Alice measures her two qubis and sends the results to Bob using a classical channel
 
 
 - Bob receives the two bits $𝐶_1𝐶_0$ and depending on their values takes the following actions
@@ -59,7 +59,7 @@ $$ CNOT \ket{10}= \ket{10}$$
 $$ CNOT \ket{11}= \ket{01}$$
 
 
-- Following the protocol, Alice applyes a CNOT gate to het 2 qubits  $𝑞_1𝑞_0$ and a Hadamard gate to qubit  $𝑞_0$. 
+- Following the protocol, Alice applies a CNOT gate to het 2 qubits  $𝑞_1𝑞_0$ and a Hadamard gate to qubit  $𝑞_0$. 
 
 resulting in the state
 
@@ -83,10 +83,9 @@ $$
 - Next Alice measures her two qubits and sends the result $C_1C_0$ to Bob through a classical channel
 Enseguida Alice mide sus 2 qubits y le manda el resultado de los 2 bits a través de un canal clásico 
  
-in consequence Bob´s se proyectará en uno de los 4 estados siguientes:
-El qubit de Bob qubit will  turn into one of the four states:
+in consequence Bob´s qubit will transform into one of the four states:
 
-$$ |00\rangle \rightarrow (\alpha|0\rangle + \beta|1\rangle)$$
+$$|00\rangle \rightarrow (\alpha|0\rangle + \beta|1\rangle)$$
 
 $$|01\rangle \rightarrow (\alpha|1\rangle - \beta|0\rangle)$$
 
