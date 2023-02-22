@@ -37,11 +37,11 @@ If 𝐶1𝐶0=11 applies a X gate followed by a Z gate to his qubit
 
 $$ \alpha|0\rangle + \beta|1\rangle $$
 
-- The entangled qubits are 
+- The entangled qubits produced by Carol are 
 
 $$  \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) $$
 
-- Alice gets the rightmost qubit and Bob the leftmost qubit  so that the quantum state of the three qubits is
+- Alice gets the rightmost qubit of the entangled pair and Bob the leftmost qubit  so that the quantum state of the three qubits is
 
 $$ \begin{align*}
 \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)\otimes ( \alpha|0\rangle+ \beta |1\rangle \\
@@ -51,8 +51,11 @@ $$ \begin{align*}
 - Let´s recall that 
 
 $$ CNOT \ket{00}= \ket{00}$$
+
 $$ CNOT \ket{01}= \ket{11}$$
+
 $$ CNOT \ket{10}= \ket{10}$$
+
 $$ CNOT \ket{11}= \ket{01}$$
 
 
