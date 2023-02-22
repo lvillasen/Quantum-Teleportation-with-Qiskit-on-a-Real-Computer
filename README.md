@@ -23,13 +23,16 @@ Para prósitos del circuito cuántico que haremos, vamos a llamar 𝑞0 a |𝜓�
 
 
 - Bob receives the two bits $𝐶_1𝐶_0$ and depending on their values takes the following actions
-
+```
 If 𝐶1𝐶0=00 does nothing
 If 𝐶1𝐶0=01 applys a Z gate to his qubit 
 If 𝐶1𝐶0=10 applys a X gate to his qubit 
-If 𝐶1𝐶0=11 applys the gates ZX to his qubit 
+If 𝐶1𝐶0=11 applys a X gate followed by a Z gate to his qubit 
+```
+- Now Bob´s qubit 
+$$e^{-\frac{t}{RC}}$$
 
-- Now Bob´s qubit $q_2$ is identical to $$ |\psi\rangle$. 
+- $q_2$ is identical to $$ |\psi\rangle$. 
 
 
 
