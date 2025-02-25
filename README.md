@@ -15,7 +15,7 @@ $|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$ with Bob, they can do the follow
 
 - Alice applies a CNOT gate to her two qubits $q_1q_0$
 
-- Alice applies a Hadamard gate to gate to her qubit $q_0$
+- Alice applies a Hadamard gate to her qubit $q_0$
 
 - Alice measures her two qubis and sends the results to Bob using a classical channel
 
